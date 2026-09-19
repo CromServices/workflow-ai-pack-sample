@@ -3,7 +3,7 @@
 **Pack:** Workflow Agent Pack (FAQ / support lite)  
 **Sample company:** Northline Supplies Pty Ltd (fictional AU SMB — not a live client)  
 **Workflow:** One desk — order status, shipping, and returns FAQ  
-**Runtime:** Client ChatGPT / Claude / Grok / similar. **Client keys only.** Crom Services does not host this agent or meter tokens.
+**Runtime:** Client ChatGPT, Claude, or your LLM keys. **Client keys only.** Crom Services does not host this agent or meter tokens.
 
 Paste the system prompt below as-is. Pair it with [`../escalate-hard-stop-map.md`](../escalate-hard-stop-map.md) and run [`../test-checklist.md`](../test-checklist.md) after seating.
 
