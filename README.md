@@ -15,7 +15,7 @@ We seat specialist agents for one workflow on your tools—rules, escalate map, 
 | [prompts/faq-support-agent.md](prompts/faq-support-agent.md) | Specialist system prompt for one desk: order status, shipping, and returns FAQ. Paste-ready. |
 | [escalate-hard-stop-map.md](escalate-hard-stop-map.md) | When to hand off to a human, and absolute refuses. |
 | [test-checklist.md](test-checklist.md) | Happy / edge / refuse rows to run after seating. |
-| [seating-steps.md](seating-steps.md) | How to paste and run on ChatGPT / Claude / Grok / similar with **your** keys. |
+| [seating-steps.md](seating-steps.md) | How to paste and run on ChatGPT, Claude, or your LLM keys with **your** keys. |
 
 Placeholder company and sample order rows only. No personal names. No live job-status `/j/` tokens.
 
@@ -24,7 +24,7 @@ Placeholder company and sample order rows only. No personal names. No live job-s
 - One named workflow (FAQ/support, lead follow-up, ops digest, or similar)
 - 2–4 specialist prompts **or** a single FAQ/support agent pack when board-shaped (this sample is the single-desk shape)
 - Hard stops + escalate map + test pack (happy / edge / refuse)
-- Seating steps on **client** ChatGPT / Grok / Claude / etc.
+- Seating steps on **client** ChatGPT, Claude, or your LLM keys
 - One revision round
 
 ## Out
