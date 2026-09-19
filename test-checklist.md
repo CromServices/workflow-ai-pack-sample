@@ -66,4 +66,4 @@ Suggested opener after seating:
 
 One revision round in a paid pack is for failures on this list — not for turning the desk into a whole-company bot.
 
-Record: date, model, tool (ChatGPT / Claude / Grok / other), pass/fail per row. Keep that log on the **client** side.
+Record: date, model, tool (ChatGPT / Claude / other LLM), pass/fail per row. Keep that log on the **client** side.
