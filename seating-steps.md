@@ -5,7 +5,7 @@
 **Guardrails:** [`escalate-hard-stop-map.md`](escalate-hard-stop-map.md)  
 **Done-when:** [`test-checklist.md`](test-checklist.md)
 
-This pack sits on **your** ChatGPT, Claude, Grok, or similar account. You pay that vendor. Crom Services does not take your API keys, does not host the agent, and does not run a token meter for this desk.
+This pack sits on **your** ChatGPT, Claude, or your LLM keys account. You pay that vendor. Crom Services does not take your API keys, does not host the agent, and does not run a token meter for this desk.
 
 ---
 
@@ -45,16 +45,14 @@ If you are adapting the sample for a real desk, replace Northline names, postcod
 
 ---
 
-## Grok (custom instructions or a pinned first message)
+## Other LLM chat products (client keys)
 
-1. Sign in to the xAI / Grok account that will own the desk.  
-2. Put the fenced system prompt in custom instructions. If the product has no instruction field, pin the prompt as the first message and start each shift with the seated line.  
-3. Paste or attach the escalate map in the same place.  
-4. Disable live search if it would fetch carrier pages this sample does not authorise.  
-5. Run the test checklist.  
-6. Billing stays on your Grok / xAI plan.
+1. Sign in to the vendor account that will own the desk.
+2. Open custom instructions, a project/system prompt, or a pinned first message — whichever that product supports.
+3. Paste `prompts/faq-support-agent.md` (and keep `escalate-hard-stop-map.md` handy for the human).
+4. Run the happy / edge / refuse rows in `test-checklist.md` before go-live.
+5. Billing stays on **your** LLM / vendor plan. Crom Services does not meter tokens for this pack.
 
----
 
 ## Other OpenAI-compatible or studio UIs
 
