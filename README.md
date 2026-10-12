@@ -1,83 +1,69 @@
-# Workflow Agent Pack: open sample
+# A customer asks at 9pm
 
-Openable sample pack from **Crom Services**. FAQ / support lite. One business workflow, not a whole-company AI programme.
+**Demo.** Northline Supplies is a fictional Australian shop. It sells workshop consumables, fasteners, packaging, and PPE. It is not a real client. The orders in this page are samples.
 
-## What it is
+Crom Services, Australia.
 
-We seat specialist agents for one workflow on your tools: rules, escalate map, test checklist, handoff. You pay your own LLM/runtime.
+## The problem
 
-This repo is a **finished pack you can open**, not only a shape note. The filled sample uses a fictional Australian small business (**Northline Supplies**). No live client data.
+It is 9pm on Tuesday. The counter is closed until 8am. A customer writes in anyway.
 
-| Artefact | What it is |
-| --- | --- |
-| [prompts/faq-support-agent.md](prompts/faq-support-agent.md) | Specialist system prompt for one desk: order status, shipping, and returns FAQ. Paste-ready. |
-| [escalate-hard-stop-map.md](escalate-hard-stop-map.md) | When to hand off to a human, and absolute refuses. |
-| [test-checklist.md](test-checklist.md) | Happy / edge / refuse rows to run after seating. |
-| [seating-steps.md](seating-steps.md) | How to paste and run on ChatGPT, Claude, or other LLM tools with **your** keys. |
-| [pack.config.json](pack.config.json) | The sample's settings: business name, workflow, channels, escalation contacts, refuse list. |
-| [templates/](templates/) | Placeholder versions of the four artefacts, for a new job. |
+Where is order NL-10482? And can the unopened stretch wrap on order NL-10560 be collected?
 
-Placeholder company and sample order rows only. No personal names. No live job-status `/j/` tokens.
+These are the questions that already fill the morning: order status, shipping, and returns. The reply used to wait until someone was back at the counter. The customer sat with it all night, and the team opened to a pile of messages that were mostly the same.
 
-### In
+## What happens
 
-- One named workflow (FAQ/support, lead follow-up, ops digest, or similar)
-- 2–4 specialist prompts **or** a single FAQ/support agent pack (this sample is the single-desk shape)
-- Hard stops + escalate map + test pack (happy / edge / refuse)
-- Seating steps on **client** ChatGPT, Claude, or other LLM keys
-- One revision round
+The question is answered at 9:04 pm, the same minute it arrives.
 
-### Out
+Order NL-10482 is packed. It left with AusPost on Tuesday. Allow about 3 business days from dispatch.
 
-- Crom Services bots/computer access; our API keys as free runtime
-- Whole-company AI transformation
-- Live chat staffing, Zendesk/KB programmes, workshops, MVP platforms
-- Hosting or running the agent for you after handoff
+The customer is booked in. The unopened stretch wrap on NL-10560 was delivered last Friday and is still inside the 14-day window. Collection is Thursday, 9:00–11:00 am. Return freight on unopened stock sits with the buyer. Northline covers that freight only when the wrong item was sent.
 
-### Runtime / keys
+A confirmation is sent at 9:04 pm, to the contact on the order.
 
-Client tools and client keys only. Crom Services builds and seats the pack; it does not host the agent or meter tokens.
+![Tuesday 9:04 pm. The question is answered, the return collection is booked, and a confirmation is sent.](screenshots/01-evening-question-answered.png)
 
-## What it proves
+![The confirmation the customer receives the same night.](screenshots/02-booking-confirmation.png)
 
-- One workflow can be fenced: the agent answers from the pack, hands off, or refuses. There is no fourth path.
-- The guardrails are written down and testable: every escalate and refuse rule has a matching row in the test checklist.
-- It runs on the client's own tools and keys, with nothing hosted by us.
-- It is reusable: the same pack shape is re-filled for a new business from one config file (see below).
+The fix, in plain words:
 
-## Live link
+1. A common question asked after closing is answered the same night.
+2. A straightforward booking, such as this return collection, is made while the counter is shut.
+3. A confirmation goes to the contact on the order before morning.
+4. Anything that needs a person is held, with the order, the product, and the customer's words already written down.
 
-There is no hosted app: this pack is markdown you paste into your own LLM tool. Try it like this:
+## What's handed to staff
 
-1. Open [seating-steps.md](seating-steps.md) and sit the prompt on an account you control.
-2. Paste the fenced system prompt from [prompts/faq-support-agent.md](prompts/faq-support-agent.md).
-3. Keep [escalate-hard-stop-map.md](escalate-hard-stop-map.md) next to the model.
-4. Tick [test-checklist.md](test-checklist.md) (happy / edge / refuse).
+On Wednesday at 8:06 am the team does not reopen every message from the night. They see only what needs a person. The details are already there.
+
+Two notes are waiting.
+
+- **Order NL-10510, nitrile gloves.** At 9:18 pm the customer wrote that the carton arrived crushed. The order was paid. The last scan was the Brisbane facility, postcode 4000. No refund was promised, and nothing was replaced overnight.
+- **Order NL-10531.** At 9:41 pm the customer asked for a new delivery address. The order is paid, on hold for an address check, and not dispatched. Postcode 6000. The address was not changed overnight.
+
+The 9:04 pm question is not on that list. The status was given, the collection was booked, and the confirmation went out.
+
+![Wednesday 8:06 am. The team sees only the two notes that need a person.](screenshots/03-morning-staff-handoff.png)
+
+## What worked and what didn't
+
+What worked: the customer was not left until morning for a status and a collection time. The answer, the booking, and the confirmation all happened at 9:04 pm. The team opened to two notes, not the whole night.
+
+What didn't: unusual requests still wait for a person the next morning. A crushed carton, a refund, or a change of address is not decided at 9pm. The customer is told it is waiting for the team. Nothing is promised overnight.
+
+## Next steps
+
+This page is one evening at one fictional shop, so the shape is easy to see.
+
+A shop with the same morning pile — where is the order, when does it arrive, can this unopened item come back — can compare a closed evening with the counter the next day. Ordinary questions should already be answered, booked, and confirmed. The team should open to the few that need them: damage, a refund, a change to the order.
 
 Other packs: https://cromservices.github.io/job-page-sample/packs/
-
-## Reuse for a new job
-
-The Northline files at the repo root are the **filled sample**. [`templates/`](templates/) holds the same four artefacts with `{{TOKEN}}` placeholders.
-
-1. **Copy the templates.** Copy everything in `templates/` (keeping `prompts/`) and `pack.config.json` into a new folder or repo for the job.
-2. **Edit `pack.config.json`.** Replace the Northline values with the client's: business name, workflow, channels, escalation contacts, refuse list, hours, lookup fields and sample records.
-3. **Replace the tokens.** Each `{{TOKEN}}` is the upper-case form of a config key (`business_name` → `{{BUSINESS_NAME}}`). Text values go in as written. List values go in one item per line, as `- ` bullets (or as table rows where the template shows a table).
-4. **Fill the job-specific rows.** `<FILL: ...>` lines are prompts to write job-specific content (policy facts, happy-path tests, workflow-specific escalates). Use the Northline files as the worked example.
-5. **Check nothing is left.** `grep -rn --exclude=README.md -e '{{' -e '<FILL' .` should print nothing. Then run the test checklist on the client's tool before go-live.
-
-### Client checklist (paid seating)
-
-1. Name the one workflow (one sentence)
-2. Which client accounts/tools hold the agents
-3. Where secrets live (you keep the keys)
-4. Done-when test (happy / edge / refuse)
-
-## Footer
 
 ---
 
 Crom Services · Australia · cromservices@gmail.com
+
 Site: https://cromservices.com.au · Packs: https://cromservices.github.io/job-page-sample/packs/
 
 <a href="https://cromservices.com.au"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cromservices.com.au/brand/credit/crom-credit-lockup-dark@2x.png"><img src="https://cromservices.com.au/brand/credit/crom-credit-lockup-light@2x.png" width="175" height="20" alt="Built by Crom Services"></picture></a>
