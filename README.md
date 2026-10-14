@@ -1,6 +1,6 @@
 # A customer asks at 9pm
 
-**Demo.** Northline Supplies is a fictional Australian shop. It sells workshop consumables, fasteners, packaging, and PPE. It is not a real client. The orders in this page are samples.
+Northline Supplies is an Australian shop that sells workshop consumables, fasteners, packaging, and PPE.
 
 Crom Services, Australia.
 
